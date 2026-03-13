@@ -1,29 +1,67 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<BaseLayout pageTitle="Welcome — Portfolio" description="Welcome page for Adwik Pandey's AI/ML portfolio.">
-	<section class="card pad">
-		<div class="hero">
-			<div>
-				<span class="badge">Welcome</span>
-				<h1 class="h1" style="margin-top:12px;">A focused AI/ML portfolio built for internships.</h1>
-				<p class="p">
-					Selected projects with clean, case-study style write-ups. Designed to be fast, elegant, and easy to scan.
-				</p>
 
-				<div class="btnrow">
-					<a class="btn primary" href="/home">Begin</a>
-					<a class="btn ghost" href="/projects">View projects</a>
-				</div>
+<BaseLayout>
 
-				<div class="pillrow">
-					<span class="pill">Computer Vision</span>
-					<span class="pill">Machine Learning</span>
-					<span class="pill">Real-time systems</span>
-				</div>
-			</div>
+<section class="hero">
 
-			<img class="heroImg" src="/images/portrait.jpg" alt="Portrait" />
-		</div>
-	</section>
+<div class="hero-text">
+
+<h1>Hi, I'm <span class="gradient">Adwik Pandey</span></h1>
+
+<h2>Aspiring AI/ML Engineer</h2>
+
+<p>
+Building Intelligent Systems | Because Machine also has Life!
+</p>
+
+<p>
+Third-year B.Tech student specializing in AI/ML.
+Passionate about computer vision, deep learning,
+and real-world ML applications.
+</p>
+
+<div class="buttons">
+
+<a href="/projects" class="btn-primary">
+View My Work
+</a>
+
+<a href="/about" class="btn-secondary">
+About Me
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde"/>
+
+</div>
+
+</section>
+
+
+<section class="stats">
+
+<div class="stat-card">
+<h3>3+</h3>
+<p>ML Projects</p>
+</div>
+
+<div class="stat-card">
+<h3>10+</h3>
+<p>Technologies</p>
+</div>
+
+<div class="stat-card">
+<h3>NIIT</h3>
+<p>Neemrana Student</p>
+</div>
+
+</section>
+
 </BaseLayout>
