@@ -1,0 +1,44 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const linkedInUrl =
+	"https://www.linkedin.com/posts/adwik-pandey-447224314_ai-machinelearning-gesturerecognition-activity-7359671002873630721-vllt";
+---
+<BaseLayout pageTitle="Home — Portfolio" description="Adwik Pandey AI/ML and computer vision portfolio.">
+	<section class="card pad">
+		<span class="badge">Adwik Pandey</span>
+		<h1 class="h1" style="margin-top:12px;">AI/ML enthusiast focused on computer vision systems.</h1>
+		<p class="p">
+			Third-year B.Tech student at NIT University, Nimrana (AI/ML specialization). I build machine learning solutions and
+			real-time CV pipelines that solve practical problems.
+		</p>
+
+		<div class="btnrow">
+			<a class="btn primary" href="/projects">Explore projects</a>
+			<a class="btn ghost" href={linkedInUrl} target="_blank" rel="noreferrer">Watch gesture demo</a>
+		</div>
+	</section>
+
+	<section class="grid">
+		<div class="card pad col7">
+			<h2 class="h2">Core skills</h2>
+			<div class="pillrow">
+				<span class="pill">Python</span>
+				<span class="pill">OpenCV</span>
+				<span class="pill">Model training</span>
+				<span class="pill">Inference pipelines</span>
+				<span class="pill">Latency + UX</span>
+			</div>
+			<p class="p">I focus on end-to-end delivery: model, evaluation, and a usable real-time demo.</p>
+		</div>
+
+		<div class="card pad col5" id="contact">
+			<h2 class="h2">Contact</h2>
+			<p class="p">Email: <span style="color: var(--text); font-weight:800;">pandeyadwik@gmail.com</span></p>
+			<div class="btnrow">
+				<a class="btn primary" href="mailto:pandeyadwik@gmail.com">Email</a>
+				<a class="btn ghost" href="https://github.com/adwik87" target="_blank" rel="noreferrer">GitHub</a>
+			</div>
+		</div>
+	</section>
+</BaseLayout>

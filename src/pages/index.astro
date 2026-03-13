@@ -1,147 +1,29 @@
 ---
-const linkedInUrl =
-  "https://www.linkedin.com/posts/adwik-pandey-447224314_ai-machinelearning-gesturerecognition-activity-7359671002873630721-vllt";
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Portfolio — AI/ML</title>
-    <meta name="description" content="AI/ML portfolio showcasing computer vision projects." />
-    <style>
-      :root { color-scheme: dark; }
-      body {
-        margin: 0;
-        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
-        background:
-          radial-gradient(1000px 600px at 20% 10%, rgba(124,58,237,0.20), transparent 55%),
-          radial-gradient(800px 520px at 80% 30%, rgba(34,211,238,0.12), transparent 55%),
-          #0B0F14;
-        color: rgba(255,255,255,0.86);
-      }
-      a { color: inherit; text-decoration: none; }
-      .wrap { max-width: 1100px; margin: 0 auto; padding: 28px 20px 60px; }
-      .nav {
-        position: sticky; top: 0; z-index: 10;
-        backdrop-filter: blur(10px);
-        background: rgba(11,15,20,0.65);
-        border-bottom: 1px solid rgba(255,255,255,0.10);
-      }
-      .navin { max-width: 1100px; margin: 0 auto; padding: 14px 20px; display:flex; justify-content:space-between; align-items:center; }
-      .pill { font-size: 12px; border: 1px solid rgba(255,255,255,0.14); padding: 6px 10px; border-radius: 999px; color: rgba(255,255,255,0.65); background: rgba(255,255,255,0.04); }
-      .hero {
-        margin-top: 22px;
-        border: 1px solid rgba(255,255,255,0.10);
-        background: rgba(255,255,255,0.05);
-        border-radius: 22px;
-        padding: 28px;
-        box-shadow: 0 20px 80px rgba(0,0,0,0.45);
-      }
-      h1 { margin: 14px 0 0; font-size: clamp(34px, 4vw, 52px); letter-spacing: -0.03em; }
-      p { margin: 12px 0 0; line-height: 1.65; color: rgba(255,255,255,0.68); font-size: 16px; max-width: 64ch; }
-      .btns { display:flex; gap: 12px; margin-top: 18px; flex-wrap: wrap; }
-      .btn {
-        display:inline-flex; align-items:center; justify-content:center;
-        padding: 12px 16px; border-radius: 14px; font-weight: 700; font-size: 14px;
-        border: 1px solid rgba(255,255,255,0.12);
-        background: rgba(255,255,255,0.04);
-      }
-      .btn.primary { background: #7C3AED; border-color: rgba(124,58,237,0.6); color: white; }
-      .grid { margin-top: 28px; display: grid; gap: 14px; grid-template-columns: repeat(12, 1fr); }
-      .card {
-        grid-column: span 12;
-        border: 1px solid rgba(255,255,255,0.10);
-        background: rgba(255,255,255,0.04);
-        border-radius: 18px;
-        padding: 18px;
-        transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
-      }
-      .card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.16); }
-      .muted { color: rgba(255,255,255,0.62); font-size: 13px; }
-      .title { font-weight: 800; letter-spacing: -0.02em; font-size: 18px; }
-      .tags { display:flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-      .tag { font-size: 12px; border: 1px solid rgba(255,255,255,0.12); padding: 6px 10px; border-radius: 999px; color: rgba(255,255,255,0.62); background: rgba(0,0,0,0.18); }
-      .section { margin-top: 16px; }
-      .section h2 { margin: 0 0 8px; font-size: 18px; letter-spacing: -0.02em; }
-      @media (min-width: 820px) {
-        .card.project { grid-column: span 7; }
-        .card.side { grid-column: span 5; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="nav">
-      <div class="navin">
-        <div style="display:flex; gap:10px; align-items:center;">
-          <div style="font-weight:800; letter-spacing:-0.02em;">Portfolio</div>
-          <div class="pill">AI/ML • Computer Vision</div>
-        </div>
-        <div style="display:flex; gap:14px; align-items:center;">
-          <a class="muted" href="#projects">Projects</a>
-          <a class="muted" href="#about">About</a>
-          <a class="muted" href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
+<BaseLayout pageTitle="Welcome — Portfolio" description="Welcome page for Adwik Pandey's AI/ML portfolio.">
+	<section class="card pad">
+		<div class="hero">
+			<div>
+				<span class="badge">Welcome</span>
+				<h1 class="h1" style="margin-top:12px;">A focused AI/ML portfolio built for internships.</h1>
+				<p class="p">
+					Selected projects with clean, case-study style write-ups. Designed to be fast, elegant, and easy to scan.
+				</p>
 
-    <main class="wrap">
-      <section class="hero">
-        <div class="pill">Open to internships • Fast, real-time systems</div>
-        <h1>Building practical AI systems that feel instant.</h1>
-        <p>
-          AI/ML portfolio focused on computer vision and real-time interaction. Highlighting projects designed like products:
-          responsive, usable, and engineered with care.
-        </p>
-        <div class="btns">
-          <a class="btn primary" href="#projects">View projects</a>
-          <a class="btn" href={linkedInUrl} target="_blank" rel="noreferrer">Project demo</a>
-        </div>
-      </section>
+				<div class="btnrow">
+					<a class="btn primary" href="/home">Begin</a>
+					<a class="btn ghost" href="/projects">View projects</a>
+				</div>
 
-      <section id="projects" class="grid">
-        <a class="card project" href={linkedInUrl} target="_blank" rel="noreferrer">
-          <div class="title">Gesture-Control Gaming (Temple Run 2)</div>
-          <div class="muted" style="margin-top:6px;">
-            Computer vision + ML gesture recognition mapped to in-game actions for touchless gameplay.
-          </div>
-          <div class="tags">
-            <span class="tag">Computer Vision</span>
-            <span class="tag">Gesture Recognition</span>
-            <span class="tag">Real-time</span>
-            <span class="tag">Machine Learning</span>
-          </div>
-        </a>
+				<div class="pillrow">
+					<span class="pill">Computer Vision</span>
+					<span class="pill">Machine Learning</span>
+					<span class="pill">Real-time systems</span>
+				</div>
+			</div>
 
-        <div class="card side" id="about">
-          <div class="title">About</div>
-          <div class="muted" style="margin-top:8px; line-height:1.7;">
-            Third-year B.Tech student specializing in AI/ML. Interested in building systems where latency and UX matter,
-            not just model accuracy.
-          </div>
-
-          <div class="section" style="margin-top:14px;">
-            <h2>Skills</h2>
-            <div class="tags">
-              <span class="tag">Python</span>
-              <span class="tag">OpenCV</span>
-              <span class="tag">Model training</span>
-              <span class="tag">Inference pipelines</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" id="contact">
-          <div class="title">Contact</div>
-          <div class="muted" style="margin-top:8px; line-height:1.8;">
-            Email: <span style="color:rgba(255,255,255,0.82);">pandeyadwik@gmail.com</span><br />
-            LinkedIn demo: <a style="text-decoration:underline; text-decoration-color: rgba(255,255,255,0.25);" href={linkedInUrl} target="_blank" rel="noreferrer">Watch here</a>
-          </div>
-        </div>
-      </section>
-
-      <div class="muted" style="margin-top: 30px;">
-        © {new Date().getFullYear()} • adwik87
-      </div>
-    </main>
-  </body>
-</html>
+			<img class="heroImg" src="/images/portrait.jpg" alt="Portrait" />
+		</div>
+	</section>
+</BaseLayout>

@@ -1,0 +1,43 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const linkedInUrl =
+	"https://www.linkedin.com/posts/adwik-pandey-447224314_ai-machinelearning-gesturerecognition-activity-7359671002873630721-vllt";
+---
+<BaseLayout pageTitle="Projects — Portfolio" description="AI/ML and computer vision projects by Adwik Pandey.">
+	<section class="card pad">
+		<span class="badge">Selected work</span>
+		<h1 class="h1" style="margin-top:12px;">Projects</h1>
+		<p class="p">Case-study projects showing problem, approach, implementation, and results.</p>
+	</section>
+
+	<section class="grid">
+		<article class="card pad col7">
+			<img class="thumb" src="/images/gesture.jpg" alt="Gesture-control gaming project thumbnail" />
+			<h2 class="h2" style="margin-top:14px;">Gesture-Control Gaming (Temple Run 2)</h2>
+			<p class="p">
+				A real-time gesture recognition system using computer vision + machine learning, mapped to in-game actions for
+				touchless gameplay.
+			</p>
+
+			<div class="pillrow">
+				<span class="pill">Gesture Recognition</span>
+				<span class="pill">Computer Vision</span>
+				<span class="pill">Real-time</span>
+				<span class="pill">ML</span>
+			</div>
+
+			<div class="btnrow">
+				<a class="btn primary" href={linkedInUrl} target="_blank" rel="noreferrer">Watch demo</a>
+				<a class="btn ghost" href="/about">About me</a>
+			</div>
+		</article>
+
+		<aside class="card pad col5">
+			<h2 class="h2">Next project slot</h2>
+			<p class="p">
+				Add one more project to make the portfolio feel complete. A small but well-presented ML/CV tool works.
+			</p>
+		</aside>
+	</section>
+</BaseLayout>
